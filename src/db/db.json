@@ -1,0 +1,96 @@
+{
+
+    "products":[
+        {
+            "id": 1,
+            "price": 29.99,
+            "img": "/bread1.jpg",
+            "title": "Product 1",
+            "type": "Electronics",
+            "seller": "Seller A",
+            "logo": "/bread1.jpg"
+        },
+        {
+            "id": 2,
+            "price": 49.99,
+            "img": "/bread2.jpg",
+            "title": "Product 2",
+            "type": "Clothing",
+            "seller": "Seller B",
+            "logo": "/bread2.jpg"
+        },
+        {
+            "id": 3,
+            "price": 19.99,
+            "img": "/bread.jpg",
+            "title": "Product 3",
+            "type": "Books",
+            "seller": "Seller C",
+            "logo": "/bread3.jpg"
+        },
+        {
+            "id": 4,
+            "price": 99.99,
+            "img": "/bread1.jpg",
+            "title": "Product 4",
+            "type": "Electronics",
+            "seller": "Seller A",
+            "logo": "/bread2.jpg"
+        },
+        {
+            "id": 5,
+            "price": 39.99,
+            "img": "/bread2.jpg",
+            "title": "Product 5",
+            "type": "Home",
+            "seller": "Seller D",
+            "logo": "/bread3.jpg"
+        },
+        {
+            "id": 6,
+            "price": 59.99,
+            "img": "/bread.jpg",
+            "title": "Product 6",
+            "type": "Clothing",
+            "seller": "Seller B",
+            "logo": "/bread1.jpg"
+        },
+        {
+            "id": 7,
+            "price": 15.99,
+            "img": "/bread1.jpg",
+            "title": "Product 7",
+            "type": "Books",
+            "seller": "Seller C",
+            "logo": "/bread2.jpg"
+        },
+        {
+            "id": 8,
+            "price": 89.99,
+            "img": "/bread2.jpg",
+            "title": "Product 8",
+            "type": "Electronics",
+            "seller": "Seller A",
+            "logo": "/bread3.jpg"
+        },
+        {
+            "id": 9,
+            "price": 25.99,
+            "img": "/bread.jpg",
+            "title": "Product 9",
+            "type": "Home",
+            "seller": "Seller D",
+            "logo": "/bread1.jpg"
+        },
+        {
+            "id": 10,
+            "price": 75.99,
+            "img": "/bread1.jpg",
+            "title": "Product 10",
+            "type": "Clothing",
+            "seller": "Seller B",
+            "logo": "/bread3.jpg"
+        }
+
+    ]
+}

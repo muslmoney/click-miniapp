@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { LuMessageCircleMore } from "react-icons/lu";
 import styles from './home.module.css';
 import Button from '../../components/Buttons/Buttons';
-
+import db from '../../db/db.json';
+import ProductCard from '../../components/ProductCard/ProductCard.jsx'
 const Home = () => {
+  const products = db.products;
   const [scrolled, setScrolled] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
@@ -114,6 +116,11 @@ const Home = () => {
               <Button link={'./search'} icon={'shop.svg'} title={'porno'} />
               <Button link={'./search'} icon={'folder.svg'} title={'porno'} />
             </div>
+        <div className={styles.products}>
+        {products && products.map((product) => (
+          <ProductCard   title={product.title} price={product.price}  seller={product.seller} logo={product.logo} img={product.img}  key={product.id}  />
+        ))}
+        </div>
           </div>
         </section>
       </div>

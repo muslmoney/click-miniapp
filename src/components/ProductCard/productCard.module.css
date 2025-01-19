@@ -1,7 +1,80 @@
-.ProductCard{
+.productCard {
     padding: 20px;
     background-color: white;
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.seller {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 5px 0;
+
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.logo {
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        display: flex;
+        align-items: center;
+        text-align: end;
+        width: 100%;
+        max-width: 200px;
+        border: none;
+        background: #fff;
+        border-radius: 50%;
+        gap: 10px;
+        svg {
+            width: 30px;
+        }
+    }
+    .like{
+        justify-content: start;
+        
+    }
+    .bag{
+        justify-content: end;
+
+    }
+
 }

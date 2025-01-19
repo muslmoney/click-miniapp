@@ -11,47 +11,47 @@ const Footer = () => {
     return (
         <footer className='container'>
             <nav className={styles.nav}>
-                <li>
+                <li className={styles.li}>
                     <Link to={'./home'}>
                         <CiHome className={styles.icon} />
                         <h2>Главная</h2>
                     </Link>
                 </li>
-                <li>
-                <Link to={'./search'}>
-                    <CiSearch className={styles.icon} />
-                    <h2>
-                        Поиск
-                    </h2>
+                <li className={styles.li}>
+                    <Link to={'./search'}>
+                        <CiSearch className={styles.icon} />
+                        <h2>
+                            Поиск
+                        </h2>
 
-                </Link>
+                    </Link>
                 </li>
-                <li>
-                <Link to={'./cart'}>
-                    <PiBagLight className={styles.icon} />
-                    <h2>
-                        Корзина
-                    </h2>
+                <li className={styles.li}>
+                    <Link to={'./cart'}>
+                        <PiBagLight className={styles.icon} />
+                        <h2>
+                            Корзина
+                        </h2>
 
-                </Link>
+                    </Link>
                 </li>
-                <li >
-                <Link to={'./favorites'}>
-                    <CiHeart className={styles.icon} />
-                    <h2>
-                        Избранные
-                    </h2>
+                <li className={styles.li}>
+                    <Link to={'./favorites'}>
+                        <CiHeart className={styles.icon} />
+                        <h2>
+                            Избранные
+                        </h2>
 
-                </Link>
+                    </Link>
                 </li>
-                <li>
-                <Link to={'./user'}>
-                    <CiUser className={styles.icon} />
-                    <h2>
-                        Аккаунт
-                    </h2>
+                <li className={styles.li}>
+                    <Link to={'./user'}>
+                        <CiUser className={styles.icon} />
+                        <h2>
+                            Аккаунт
+                        </h2>
 
-                </Link>
+                    </Link>
                 </li>
             </nav>
         </footer>

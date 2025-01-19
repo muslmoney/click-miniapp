@@ -62,7 +62,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={styles.catalog}
+          <div className={scrolled ? `${styles.catalog} ${styles.scrolled}` : styles.catalog}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}>
             <h1 className={styles.title1}>Категории</h1>
@@ -111,10 +111,10 @@ const Home = () => {
             </div>
             <h1 className={styles.title1}>Лента</h1>
             <div className={styles.buttons}>
-              <Button link={'./search'} icon={'/price.svg'} title={'pornopornoporno'} />
-              <Button link={'./search'} icon={'/sort.svg'} title={'pornopornoporno'} />
-              <Button link={'./search'} icon={'shop.svg'} title={'porno'} />
-              <Button link={'./search'} icon={'folder.svg'} title={'porno'} />
+              <Button link={'./search'} icon={'/price.svg'} title={'chtoto'} />
+              <Button link={'./search'} icon={'/sort.svg'} title={'chtotochtotochtoto'} />
+              <Button link={'./search'} icon={'shop.svg'} title={'chtoto'} />
+              <Button link={'./search'} icon={'folder.svg'} title={'chtotochtotochtoto'} />
             </div>
         <div className={styles.products}>
         {products && products.map((product) => (

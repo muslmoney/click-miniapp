@@ -44,7 +44,7 @@
             "title": "Product 5",
             "type": "Home",
             "seller": "Seller D",
-            "logo": "/bread3.jpg"
+            "logo": "/bread2.jpg"
         },
         {
             "id": 6,
@@ -71,7 +71,7 @@
             "title": "Product 8",
             "type": "Electronics",
             "seller": "Seller A",
-            "logo": "/bread3.jpg"
+            "logo": "/bread2.jpg"
         },
         {
             "id": 9,
@@ -89,7 +89,7 @@
             "title": "Product 10",
             "type": "Clothing",
             "seller": "Seller B",
-            "logo": "/bread3.jpg"
+            "logo": "/bread2.jpg"
         }
 
     ]

@@ -43,9 +43,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-
+    position: fixed; /* Фиксируем фон */
+    top: 0;
+    left: 0;
+    width: 100%; /* Покрываем весь экран */
+    z-index: -1; /* Отправляем фон под другие элементы */
 }
+
+.hero {
+    position: relative;
+    padding-top: 40vh; /* Оставляем место для фона */
+}
+
 
 .title {
     font-weight: 600;
@@ -92,8 +101,8 @@
 
 .catalogItem {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width:clamp(50px, 25vw, 200px);
+    height: auto;
     border: 1px solid #020202;
 
     background-color: f1f1f1;
@@ -117,4 +126,20 @@
 
 .buttons::-webkit-scrollbar {
     display: none;
+}
+.catalog {
+    padding: 10px 15px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 35px;
+    top: -30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.catalog.scrolled {
+    transform: translateY(-20px); /* Приподнимаем */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Более сильная тень */
 }

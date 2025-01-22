@@ -19,7 +19,7 @@ const User = () => {
           <option value="ru">Русский</option>
         </select>
       </label>
-      сделай нормально с фикседами
+
     </section>
   );
 };

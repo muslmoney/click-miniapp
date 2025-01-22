@@ -6,7 +6,7 @@ import "./assets/fonts/fonts.css";
 import { BrowserRouter as Router, Route, Routes, Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 const App = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+const { pathname }     = useLocation();
 
   useEffect(() => {
     if (pathname === "/") {

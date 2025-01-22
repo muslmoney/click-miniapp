@@ -1,9 +1,8 @@
 .productCard {
-    padding: clamp(5px, 1vw, 20px);
+    padding: clamp(15px, 3vw, 20px) clamp(10px, 2vw, 14px);
     background-color: white;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .seller {
@@ -29,11 +28,11 @@
 .info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 5px 0;
+    gap: 10px;
 
     h3 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 500;
         padding: 5px 0 8px 0;
     }
@@ -43,6 +42,13 @@
         font-size: 16px;
         font-weight: 400;
     }
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
 }
 
 .img {
@@ -66,17 +72,68 @@
         background: #fff;
         border-radius: 50%;
         gap: 10px;
-        svg {
-            width: 30px;
+    }
+}
+
+.like {
+    justify-content: start;
+}
+
+.bag {
+    justify-content: end;
+}
+
+svg {
+    width: 30px;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+}
+
+.salePrice {
+    color: #2b05ff;
+}
+
+.searchProduct {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    height: 370px;
+
+    .img {
+        border-radius: 30px;
+
+        img {
+            height: 250px;
+
+            @media (max-width: 450px) {
+                height: 150px;
+            }
         }
     }
-    .like{
-        justify-content: start;
-        
+
+    .info {
+        gap: 0;
+flex-grow: 1;
+justify-content: space-between;        
+        h2 {
+            padding: 0;
+        }
+
+        h3 {
+            padding: 10px 0 0 0;
+        }
     }
-    .bag{
-        justify-content: end;
+
+    .prices {
+        justify-content: space-between;
+        align-items: end;
 
     }
 
+    @media (max-width: 450px) {
+        height: 270px;
+    }
 }

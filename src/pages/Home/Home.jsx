@@ -10,10 +10,9 @@ const Home = () => {
   const [scrolled, setScrolled] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 210) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -33,9 +32,9 @@ const Home = () => {
   const handleTouchEnd = (e) => {
     setTouchEnd(e.changedTouches[0].clientY);
     if (touchStart > touchEnd + 50) {
-      document.querySelector(".catalog").scrollBy(0, 100); // Прокрутка вверх
+      document.querySelector(".catalog").scrollBy(0, 100); 
     } else if (touchStart < touchEnd - 50) {
-      document.querySelector(".catalog").scrollBy(0, -100); // Прокрутка вниз
+      document.querySelector(".catalog").scrollBy(0, -100); 
     }
   };
 
@@ -65,7 +64,7 @@ const Home = () => {
           <div className={scrolled ? `${styles.catalog} ${styles.scrolled}` : styles.catalog}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}>
-            <h1 className={styles.title1}>Категории</h1>
+            <h2 className={styles.title2}>Категории</h2>
 
             <div className={styles.catalogItems}>
               <div>
@@ -109,7 +108,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <h1 className={styles.title1}>Лента</h1>
+            <h2 className={styles.title2}>Лента</h2>
             <div className={styles.buttons}>
               <Button link={'./search'} icon={'/price.svg'} title={'chtoto'} />
               <Button link={'./search'} icon={'/sort.svg'} title={'chtotochtotochtoto'} />
@@ -117,9 +116,12 @@ const Home = () => {
               <Button link={'./search'} icon={'folder.svg'} title={'chtotochtotochtoto'} />
             </div>
         <div className={styles.products}>
-        {products && products.map((product) => (
-          <ProductCard   title={product.title} price={product.price}  seller={product.seller} logo={product.logo} img={product.img}  key={product.id}  />
-        ))}
+        {products.map((product) => {
+          return(
+          <ProductCard   title={product.title} salePrice={product.salePrice} price={product.price}  seller={product.seller} logo={product.logo} img={product.img}  key={product.id}  />
+          )
+ } )}
+
         </div>
           </div>
         </section>

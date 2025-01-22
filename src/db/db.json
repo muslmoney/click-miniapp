@@ -1,9 +1,9 @@
 {
-
-    "products":[
+    "products": [
         {
             "id": 1,
             "price": 29.99,
+            "salePrice": null,
             "img": "/bread1.jpg",
             "title": "Product 1",
             "type": "Electronics",
@@ -13,6 +13,7 @@
         {
             "id": 2,
             "price": 49.99,
+            "salePrice": 9.99,
             "img": "/bread2.jpg",
             "title": "Product 2",
             "type": "Clothing",
@@ -22,15 +23,17 @@
         {
             "id": 3,
             "price": 19.99,
+            "salePrice": null,
             "img": "/bread.jpg",
             "title": "Product 3",
             "type": "Books",
             "seller": "Seller C",
-            "logo": "/bread3.jpg"
+            "logo": "/bread.jpg"
         },
         {
             "id": 4,
             "price": 99.99,
+            "salePrice": null,
             "img": "/bread1.jpg",
             "title": "Product 4",
             "type": "Electronics",
@@ -40,6 +43,7 @@
         {
             "id": 5,
             "price": 39.99,
+            "salePrice": null,
             "img": "/bread2.jpg",
             "title": "Product 5",
             "type": "Home",
@@ -49,6 +53,7 @@
         {
             "id": 6,
             "price": 59.99,
+            "salePrice": null,
             "img": "/bread.jpg",
             "title": "Product 6",
             "type": "Clothing",
@@ -58,6 +63,7 @@
         {
             "id": 7,
             "price": 15.99,
+            "salePrice": null,
             "img": "/bread1.jpg",
             "title": "Product 7",
             "type": "Books",
@@ -67,6 +73,7 @@
         {
             "id": 8,
             "price": 89.99,
+            "salePrice": null,
             "img": "/bread2.jpg",
             "title": "Product 8",
             "type": "Electronics",
@@ -76,6 +83,7 @@
         {
             "id": 9,
             "price": 25.99,
+            "salePrice": null,
             "img": "/bread.jpg",
             "title": "Product 9",
             "type": "Home",
@@ -85,12 +93,12 @@
         {
             "id": 10,
             "price": 75.99,
+            "salePrice": null,
             "img": "/bread1.jpg",
             "title": "Product 10",
             "type": "Clothing",
             "seller": "Seller B",
             "logo": "/bread2.jpg"
         }
-
     ]
 }

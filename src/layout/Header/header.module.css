@@ -1,4 +1,4 @@
-.wrap{
+.header{
     max-width: 700px;
     position: relative;
 }
@@ -7,10 +7,7 @@
     width: 50px;
     position: fixed;
     right: 25px;
-    top: 17px;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    top: 38px;
     width: 50px;
     z-index: 10000;
 }   

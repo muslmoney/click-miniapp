@@ -1,12 +1,13 @@
 .home {
     position: relative;
 }
-.container{
+
+.container {
     padding: 0 !important;
 }
 
 .wrap.scrolled {
-    background-color: white !important;
+    background-color: var(--color-default-bg) !important;
 }
 
 .container {
@@ -15,9 +16,9 @@
 
 .wrap {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
-    padding: 0 90px 0 20px;
+    padding: 28px 70px 28px 16px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,50 +28,48 @@
 }
 
 .logo {
-    width: 80px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+        color: var(--color-default-white);
+        white-space: nowrap;
+    }
+
+    img {
+        width: 60px;
+    }
 }
 
-.icon {
-    padding: 8px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.icon svg {
-    width: 35px;
-}
 
 .background {
-    height: 40vh;
-    background-image: url('/bread.jpg');
+    height: 60vh;
+    background-image: url('/bg_bread.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
+    
+    .title {
+        font-weight: 600;
+        bottom: 20%;
+        left: 10px;
+        position: absolute;
+    
+        h2 {
+            font-size: clamp(30px, 8.08vw, 60px);
+        }
+    }
 }
 
 .hero {
     position: relative;
-    padding-top: 40vh;
-}
-
-.title {
-    font-weight: 600;
-    bottom: 60px;
-    left: 10px;
-    position: absolute;
-
-    h1 {
-        font-size: clamp(20px, 6.08vw, 60px);
-    }
-
-    p {
-        font-size: clamp(10px, 3.08vw, 20px);
-    }
+    padding-top: 60vh;
 }
 
 .catalogItems {
@@ -84,6 +83,11 @@
 
     div {
         text-align: center;
+        
+            p {
+                font-size: 16px;
+                white-space: nowrap;
+            }
     }
 }
 
@@ -93,21 +97,22 @@
 
 .catalogItem {
     border-radius: 50%;
-    width: clamp(50px, 25vw, 200px);
-    height: auto;
-    background-color: f1f1f1;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-default-white);
+    overflow: hidden;
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .title2 {
-    padding: 15px 0 10px 10px;
+    padding: 15px 0 18px 10px;
+    font-size: 36px;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
     padding: 0 10px;
     overflow: scroll;
     scrollbar-width: none;
@@ -121,7 +126,7 @@
 .catalog {
     padding: 10px 15px;
     overflow-y: auto;
-    background-color: #ffffff;
+    background-color: var(--color-default-bg);
     position: relative;
     border-radius: 35px;
     top: -30px;

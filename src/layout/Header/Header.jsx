@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <header className={style.header}>
             <div className='container'>
-                <div className={style.wrap}>
-                    <RxCross2 className={style.cross} />
+                <div className={style.header}>
+                    <img className={style.cross} src="/cancel.png" alt="" />
                 </div>
             </div>
         </header>

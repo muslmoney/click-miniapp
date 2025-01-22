@@ -1,5 +1,7 @@
 .container{
     padding: 0 clamp(5px, 2vw, 20px);
+  background-color: var(--color-default-bg);
+
 }
 .grid{
     display: grid;

@@ -1,8 +1,6 @@
 .productCard {
     padding: clamp(15px, 3vw, 20px) clamp(10px, 2vw, 14px);
-    background-color: white;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    
 }
 
 .seller {
@@ -69,9 +67,8 @@
         width: 100%;
         max-width: 200px;
         border: none;
-        background: #fff;
-        border-radius: 50%;
         gap: 10px;
+        background: transparent;
     }
 }
 
@@ -116,8 +113,9 @@ svg {
 
     .info {
         gap: 0;
-flex-grow: 1;
-justify-content: space-between;        
+        flex-grow: 1;
+        justify-content: space-between;
+
         h2 {
             padding: 0;
         }

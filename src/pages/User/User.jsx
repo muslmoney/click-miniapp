@@ -19,7 +19,6 @@ const User = () => {
           <option value="ru">Русский</option>
         </select>
       </label>
-
     </section>
   );
 };

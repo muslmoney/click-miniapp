@@ -10,4 +10,7 @@
     top: 38px;
     width: 50px;
     z-index: 10000;
+    @media (max-width: 550px) {
+        width: 35px;
+    }
 }   

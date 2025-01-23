@@ -8,6 +8,7 @@ import Cart from "./pages/Cart/Cart.jsx"
 import Favorites from './pages/Favorites/Favorites.jsx'
 import Search from './pages/Search/Search.jsx'
 import User from './pages/User/User.jsx'
+import { CartProvider } from './context/Context.jsx'
 
 const router = createBrowserRouter([
 
@@ -46,9 +47,10 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ 
+ <CartProvider>
    <Suspense   fallback={<div>Loading...</div>}>
     <RouterProvider router={router} />
     </Suspense> 
-  </StrictMode>,
+  </CartProvider>,
 )

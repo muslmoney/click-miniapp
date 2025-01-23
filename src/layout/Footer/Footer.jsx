@@ -10,50 +10,40 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className='container'>
-            <nav className={styles.nav}>
-                <li className={styles.li}>
-                    <Link to={'./home'}>
+            <div className={styles.footer}>
+                    <Link className={styles.a} to={'./home'}>
                         <CiHome className={styles.icon} />
                         <h2>Главная</h2>
                     </Link>
-                </li>
-                <li className={styles.li}>
-                    <Link to={'./search'}>
+                    <Link className={styles.a} to={'./search'}>
                         <CiSearch className={styles.icon} />
                         <h2>
                             Поиск
                         </h2>
 
                     </Link>
-                </li>
-                <li className={styles.li}>
-                    <Link to={'./cart'}>
+                    <Link className={styles.a} to={'./cart'}>
                         <PiBagLight className={styles.icon} />
                         <h2>
                             Корзина
                         </h2>
 
                     </Link>
-                </li>
-                <li className={styles.li}>
-                    <Link to={'./favorites'}>
+                    <Link className={styles.a} to={'./favorites'}>
                         <CiHeart className={styles.icon} />
                         <h2>
                             Избранные
                         </h2>
 
                     </Link>
-                </li>
-                <li className={styles.li}>
-                    <Link to={'./user'}>
+                    <Link className={styles.a} to={'./user'}>
                         <CiUser className={styles.icon} />
                         <h2>
                             Аккаунт
                         </h2>
 
                     </Link>
-                </li>
-            </nav>
+            </div>
         </footer>
     )
 }

@@ -4,7 +4,7 @@ background-color: var(--color-button-bg-gray);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 9px;
     color: var(--color-default-white);
     font-size: clamp(17px, 3.33vw, 24px);
     cursor: pointer;

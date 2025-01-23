@@ -4,101 +4,101 @@
             "id": 1,
             "price": 29.99,
             "salePrice": null,
-            "img": "/bread1.jpg",
-            "title": "Product 1",
+            "img": "/bread1.png",
+            "title": "Issiq Samarqand nonlari",
             "type": "Electronics",
-            "seller": "Seller A",
-            "logo": "/bread1.jpg"
+            "seller": "Samarqand nonlari",
+            "logo": "/bread1.png"
         },
         {
             "id": 2,
             "price": 49.99,
             "salePrice": 9.99,
-            "img": "/bread2.jpg",
-            "title": "Product 2",
+            "img": "/bread2.png",
+            "title": "Product Product Product 2",
             "type": "Clothing",
             "seller": "Seller B",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         },
         {
             "id": 3,
             "price": 19.99,
             "salePrice": null,
-            "img": "/bread.jpg",
+            "img": "/bread4.png",
             "title": "Product 3",
             "type": "Books",
             "seller": "Seller C",
-            "logo": "/bread.jpg"
+            "logo": "/bread4.png"
         },
         {
             "id": 4,
             "price": 99.99,
             "salePrice": null,
-            "img": "/bread1.jpg",
+            "img": "/bread5.png",
             "title": "Product 4",
             "type": "Electronics",
             "seller": "Seller A",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         },
         {
             "id": 5,
             "price": 39.99,
             "salePrice": null,
-            "img": "/bread2.jpg",
+            "img": "/bread6.png",
             "title": "Product 5",
             "type": "Home",
             "seller": "Seller D",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         },
         {
             "id": 6,
             "price": 59.99,
             "salePrice": null,
-            "img": "/bread.jpg",
+            "img": "/bread7.png",
             "title": "Product 6",
             "type": "Clothing",
             "seller": "Seller B",
-            "logo": "/bread1.jpg"
+            "logo": "/bread1.png"
         },
         {
             "id": 7,
             "price": 15.99,
             "salePrice": null,
-            "img": "/bread1.jpg",
+            "img": "/bread8.png",
             "title": "Product 7",
             "type": "Books",
             "seller": "Seller C",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         },
         {
             "id": 8,
             "price": 89.99,
             "salePrice": null,
-            "img": "/bread2.jpg",
+            "img": "/bread9.png",
             "title": "Product 8",
             "type": "Electronics",
             "seller": "Seller A",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         },
         {
             "id": 9,
             "price": 25.99,
             "salePrice": null,
-            "img": "/bread.jpg",
+            "img": "/bread3.png",
             "title": "Product 9",
             "type": "Home",
             "seller": "Seller D",
-            "logo": "/bread1.jpg"
+            "logo": "/bread1.png"
         },
         {
             "id": 10,
             "price": 75.99,
             "salePrice": null,
-            "img": "/bread1.jpg",
+            "img": "/bread1.png",
             "title": "Product 10",
             "type": "Clothing",
             "seller": "Seller B",
-            "logo": "/bread2.jpg"
+            "logo": "/bread2.png"
         }
     ]
 }

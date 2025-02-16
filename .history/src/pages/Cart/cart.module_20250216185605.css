@@ -1,0 +1,30 @@
+.container {
+    padding: 0 clamp(5px, 2vw, 20px);
+    background-color: var(--color-default-bg);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Блок со списком товаров делает его прокручиваемым */
+.cartItems {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+/* Фиксированный блок с итоговой суммой */
+.total {
+    position: fixed;
+    bottom: 10dvh; /* Учитываем высоту футера */
+    left: 0;
+    width: 100%;
+    background: var(--color-default-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    border-top: 2px solid var(--color-button-bg-gray);
+}

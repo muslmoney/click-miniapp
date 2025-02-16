@@ -1,0 +1,56 @@
+import React from 'react'
+import styles from './search.module.css'
+import { SearchCard } from '../../components/ProductCard/ProductCard.jsx'
+import db from '../../db/db.json'
+import Button from '../../components/Buttons/Buttons.jsx'
+
+const Search = () => {
+  const products = db.products
+  return (
+    <div className={styles.container}>
+   <section>
+   <h2 className={styles.title}>
+        Qidiruv sahifasi
+      </h2>
+      <div className={styles.search}>
+        <input type="text" placeholder="Masalan: samarqand non" />
+        <button><img src="/search.png" alt="search" /></button>
+      </div>
+   </section>
+   <section className={styles.popular}> 
+<h2>
+Mashhurlari
+</h2>
+<div className={styles.buttons}>
+<Button title={'# alar'} />
+<Button title={'# Nxoalar'}/>
+<Button title={'# Nonvoyxonalar'}/>
+<Button title={'# Nonvnalar'}/>
+<Button title={'# Nonvoergrthrnalar'}/>
+ 
+</div>
+  </section>
+      <section className={styles.products}>
+        <div className={styles.filters}>
+          <Button title={'Saralash'} icon={'/sorting.png'} />
+          <Button title={'Filtrlash'} icon={'/filter.png'} />
+
+        </div>
+        <div className={styles.grid}>
+          {products.map((product) => {
+            return (
+              <SearchCard key={product.id} title={product.title} img={product.img} salePrice={product.salePrice} price={product.price} />
+            )
+          })}
+        </div>
+      </section>
+
+
+
+
+
+    </div>
+  )
+}
+
+export default Search

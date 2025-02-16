@@ -1,0 +1,95 @@
+import React from 'react'
+import styles from './productCard.module.css'
+import { useEffect, useState } from 'react';
+
+
+const ProductCard = ({ title, seller, salePrice, price, logo, img, ...props }) => {
+  const [sale, setSale] = useState(null)
+  useEffect(() => {
+    if (salePrice !== null) {
+      setSale(price)
+    }
+  }, [])
+
+  return (
+   
+
+        <div className={styles.buttons}>
+          <button className={styles.like}>
+            <img src="/favorite.png" alt="favorite" />
+            <div>
+              Sevimlilar
+            </div>
+          </button>
+          <button className={styles.bag}>
+            <span>
+              Savatga
+            </span>
+            <img src="/addToBag.png" alt="addToBag" />
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export const SearchCard = ({ price, salePrice, title, img, ...props }) => {
+  return (
+    <div className={styles.searchProduct}>
+      <div className={styles.img}>
+        <img src={img} alt={title} />
+      </div>
+      <div className={styles.info}>
+          {salePrice ? (
+            <div className={styles.prices}>
+              <div>
+                <h3>{title}</h3>
+              </div>
+              <div className={styles.price}>
+              <h2 className={styles.originalPrice}>{price} </h2>
+              <h2 className={styles.salePrice}>{salePrice} UZS</h2>
+              </div>
+               </div>
+          ) : (
+            <div>
+              <h3>{title}</h3>
+              <h2 className={styles.regularPrice}>{price} UZS</h2>
+            </div>
+          )
+
+          }
+        <div>
+        <img src="/addToBag.png" alt="addToBag" />
+
+        </div>
+        </div>
+    </div>
+  )
+}
+
+
+export const InCart = ({img, price, salePrice, title, ...props }) => {
+return(
+  <div className={styles.inCart}>
+    <div className={styles.inCart}>
+      <img className={styles.img} src={img} alt={title} />
+    </div>
+    <div>
+      <h3>
+        {title}
+      </h3>
+      <h2>
+        {price}
+      </h2>
+    </div>
+    <div>
+      <img src="/favorite" alt="favorite" />
+      <img src="/addToBag" alt="add to bag" />
+    </div>
+  </div>
+)
+
+
+}
+
+export default ProductCard

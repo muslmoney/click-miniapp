@@ -1,0 +1,24 @@
+
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 0 42px 0;
+    font-weight: 500;
+    line-height: 48.41px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.container {
+    padding: 0 clamp(5px, 2vw, 20px);
+    background-color: var(--color-default-bg);
+
+}
+.list{
+
+}
+pon{
+    
+}

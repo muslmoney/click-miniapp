@@ -1,0 +1,46 @@
+.container{
+    padding: 0 clamp(5px, 2vw, 20px);
+    background-color: var(--color-default-bg);
+
+}
+.emptyFav {
+    height: 85dvh;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto ;
+    justify-content: center;
+    h2 {
+        padding-top: 20px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 43.57px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.05px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--color-text-gray);
+
+    }
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 0 42px 0;
+    font-weight: 500;
+    line-height: 48.41px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
